@@ -45,8 +45,20 @@ $font-dir: '/static/fonts/';
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'SS Social';
+	src: url('#{$font-dir}SSSocialRegular.eot');
+	src: url('#{$font-dir}SSSocialRegular.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}SSSocialRegular.woff') format('woff'),
+		url('#{$font-dir}SSSocialRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 // Global font vars
 $font-primary: 'Nexa', sans-serif;
 $font-secondary: 'AvantGardeMdITC', helvetica;
 $font-tertiary: 'Playfair Display', serif;
+$icons-primary: 'SS Gizmo';
+$icons-secondary: 'SS Social';

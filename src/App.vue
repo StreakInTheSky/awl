@@ -18,6 +18,16 @@
     <main>
       <router-view></router-view>
     </main>
+    <footer>
+      <div class="footer__social">
+        <a href="#" class="footer__social--icon">facebook</a>
+        <a href="#" class="footer__social--icon">instagram</a>
+        <a href="#" class="footer__social--icon">twitter</a>
+      </div>
+      <a class="footer__social--link" href="#">Frequently Asked Questions</a>
+      <a class="footer__social--link" href="#">Become an Instructor</a>
+      <p class="footer__copyright">Designed by Miles Cartwright. Built by Art Longbottom. All rights reserved with Art with Larisse</p>
+    </footer>
   </div>
 </template>
 
@@ -30,13 +40,18 @@ export default {
 
 <style lang="scss">
   @import 'assets/scss/app';
-
+  body { background-color: $brand-primary }
+  #app {
+    max-width: 1480px;
+    margin: 0 auto;
+  }
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
-    color: #828282;
+    color: $brand-grey;
+    background-color: $brand-grey-light;
     -webkit-font-smoothing: antialiased;
     height: 250px;
   }
@@ -65,10 +80,47 @@ export default {
           padding: 15px 2.5vw;
 
           &:hover, .router-link-active {
-            color: black;
+            color: $brand-primary;
           }
         }
       }
+    }
+  }
+  footer {
+    background-color: $brand-grey-light;
+    height: 245px;
+    box-sizing: border-box;
+    padding: 60px 8%;
+  }
+  .footer {
+    &__social {
+      margin-bottom: 40px;
+
+      &--icon, &--link {
+        color: $brand-grey;
+        text-decoration: none;
+
+        &:hover, .router-link-active {
+          color: $brand-primary;
+        }
+      }
+      &--icon {
+        font-family: $icons-secondary;
+        font-size: 30px;
+        letter-spacing: 0.8em;
+      }
+      &--link {
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 45px;
+      }
+    }
+    &__copyright {
+      margin-top: 20px;
+      font-family: $font-tertiary;
+      color: lighten($brand-grey, 15);
     }
   }
 </style>
