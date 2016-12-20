@@ -20,12 +20,12 @@
     </main>
     <footer>
       <div class="footer__social">
-        <a href="#" class="footer__social--icon">facebook</a>
-        <a href="#" class="footer__social--icon">instagram</a>
-        <a href="#" class="footer__social--icon">twitter</a>
+        <a href="https://www.facebook.com/artwithlarisse" class="footer__social--icon">facebook</a>
+        <a href="https://www.instagram.com/artwithlarisse" class="footer__social--icon">instagram</a>
+        <a href="https://twitter.com/artwithlarisse" class="footer__social--icon">twitter</a>
       </div>
-      <a class="footer__social--link" href="#">Frequently Asked Questions</a>
-      <a class="footer__social--link" href="#">Become an Instructor</a>
+      <router-link class="footer__social--link" to="/faq">Frequently Asked Questions</router-link>
+      <router-link class="footer__social--link" to="/instructor">Become an Instructor</router-link>
       <p class="footer__copyright">Designed by Miles Cartwright. Built by Art Longbottom. All rights reserved with Art with Larisse</p>
     </footer>
   </div>

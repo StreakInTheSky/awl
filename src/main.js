@@ -11,6 +11,8 @@ import ArtParties from './components/ArtParties';
 import Tuition from './components/Tuition';
 import AboutUs from './components/AboutUs';
 import Home from './components/Home';
+import FAQ from './components/FAQ';
+import Instructor from './components/Instructor';
 
 Vue.use(VueRouter);
 /* eslint-disable no-new */
@@ -23,6 +25,8 @@ const routes = [
   { path: '/art-parties', component: ArtParties },
   { path: '/tuition', component: Tuition },
   { path: '/about-us', component: AboutUs },
+  { path: '/faq', component: FAQ },
+  { path: '/instructor', component: Instructor },
 ];
 
 const router = new VueRouter({
