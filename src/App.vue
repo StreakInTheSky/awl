@@ -1,22 +1,22 @@
 <template>
   <div id="app">
     <header>
-      <div class="logo">
+      <router-link to="/" class="logo">
         <h1>Art with Larisse</h1>
-      </div>
+      </router-link>
       <nav>
         <ul class="nav__list">
-          <li class="nav__list--item"><a href="#">Art Classes</a></li>
-          <li class="nav__list--item"><a href="#">Locations</a></li>
-          <li class="nav__list--item"><a href="#">Art Camps</a></li>
-          <li class="nav__list--item"><a href="#">Art Parties</a></li>
-          <li class="nav__list--item"><a href="#">Tuition</a></li>
-          <li class="nav__list--item"><a href="#">About Us</a></li>
+          <li class="nav__list--item"><router-link to="/art-classes">Art Classes</router-link></li>
+          <li class="nav__list--item"><router-link to="/locations">Locations</router-link></li>
+          <li class="nav__list--item"><router-link to="/art-camps">Art Camps</router-link></li>
+          <li class="nav__list--item"><router-link to="/art-parties">Art Parties</router-link></li>
+          <li class="nav__list--item"><router-link to="/tuition">Tuition</router-link></li>
+          <li class="nav__list--item"><router-link to="/about-us">About Us</router-link></li>
         </ul>
       </nav>
     </header>
     <main>
-      Main Content Goes Here
+      <router-view></router-view>
     </main>
   </div>
 </template>
@@ -25,7 +25,6 @@
 
 export default {
   name: 'app',
-  components: {},
 };
 </script>
 
@@ -65,7 +64,7 @@ export default {
           white-space: nowrap;
           padding: 15px 2.5vw;
 
-          &:hover {
+          &:hover, .router-link-active {
             color: black;
           }
         }
