@@ -1,0 +1,52 @@
+// Web fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+// Font directory
+$font-dir: '/static/fonts/';
+
+// Fontfaces
+@font-face {
+	font-family: 'AvantGardeMdITC';
+	src: url('#{$font-dir}AvantGardeMdITC-Bold.eot');
+	src: url('#{$font-dir}AvantGardeMdITC-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}AvantGardeMdITC-Bold.woff') format('woff'),
+		url('#{$font-dir}AvantGardeMdITC-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SS Gizmo';
+	src: url('#{$font-dir}SSGizmo.eot');
+	src: url('#{$font-dir}SSGizmo.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}SSGizmo.woff') format('woff'),
+		url('#{$font-dir}SSGizmo.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nexa';
+	src: url('#{$font-dir}NexaLight.eot');
+	src: url('#{$font-dir}NexaLight.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}NexaLight.woff') format('woff'),
+		url('#{$font-dir}NexaLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nexa';
+	src: url('#{$font-dir}NexaBold.eot');
+	src: url('#{$font-dir}NexaBold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}NexaBold.woff') format('woff'),
+		url('#{$font-dir}NexaBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+// Global font vars
+$font-primary: 'Nexa', sans-serif;
+$font-secondary: 'AvantGardeMdITC', helvetica;
+$font-tertiary: 'Playfair Display', serif;
