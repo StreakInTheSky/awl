@@ -4,18 +4,17 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import App from './App';
-import ArtClasses from './components/ArtClasses';
-import Locations from './components/Locations';
-import ArtCamps from './components/ArtCamps';
-import ArtParties from './components/ArtParties';
-import Tuition from './components/Tuition';
-import AboutUs from './components/AboutUs';
-import Home from './components/Home';
-import FAQ from './components/FAQ';
-import Instructor from './components/Instructor';
+import ArtClasses from './pages/ArtClasses';
+import Locations from './pages/Locations';
+import ArtCamps from './pages/ArtCamps';
+import ArtParties from './pages/ArtParties';
+import Tuition from './pages/Tuition';
+import AboutUs from './pages/AboutUs';
+import Home from './pages/Home';
+import FAQ from './pages/FAQ';
+import Instructor from './pages/Instructor';
 
 Vue.use(VueRouter);
-/* eslint-disable no-new */
 
 const routes = [
   { path: '/', component: Home },
@@ -34,6 +33,7 @@ const router = new VueRouter({
   routes,
 });
 
+/* eslint-disable no-new */
 new Vue({
   router,
   el: '#app',
