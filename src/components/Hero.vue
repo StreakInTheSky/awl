@@ -1,16 +1,21 @@
 <template>
   <div class="hero">
     <div class="hero__text-wrapper">
-      <p class="hero__pre-title">Art Classes Start Now</p>
-      <h2 class="hero__title">What Starts Here,<br>Changes the World</h2>
-      <a class="hero__link" href="#">View upcoming classes <i class="icon-gizmo">next</i></a>
+      <p v-if="options.pre_title" class="hero__pre-title">{{options.pre_title}}</p>
+      <h2 v-if="options.title" class="hero__title" v-html="title"></h2>
+      <router-link to="/art-classes" v-if="options.link_text" class="hero__link">{{options.link_text}} <i class="icon-gizmo">next</i></router-link>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: ['options'],
+  computed: {
+    title() {
+      return this.options.title.replace(/\n/, '<br>');
+    },
+  },
 };
 </script>
 
@@ -21,7 +26,6 @@ export default {
     position: relative;
     font-size: 0;
     height: 411px;
-    background-image: url('../assets/img/hero-home-1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +57,7 @@ export default {
       font-style: italic;
       -webkit-font-smoothing: antialiased;
       position: relative;
-      font-size: 1.3em;
+      font-size: 1.2em;
       letter-spacing: 0.02em;
       margin-left: 5px;
 

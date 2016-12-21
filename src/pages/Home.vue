@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Hero :options="options" />
+    <Hero :options="heroOptions" />
   </div>
 </template>
 
@@ -12,12 +12,19 @@ export default {
   components: { Hero },
   data() {
     return {
-      heroOptions: {},
+      heroOptions: {
+        pre_title: 'Art CLasses Start Now',
+        title: 'What Starts Here,\nChanges the World',
+        link_text: 'View upcoming art classes',
+        link_path: '/art-classes',
+      },
     };
   },
 };
 </script>
 
 <style lang="scss">
-
+  .hero {
+    background-image: url('../assets/img/hero-home-1.jpg');
+  }
 </style>

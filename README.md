@@ -18,13 +18,18 @@ npm run build
 
 ## Component Options
 
+### Hero Component
+
 ``` javascript
-// Hero Component options
 options = {
-  img_name: String,
   pre_title: String,
   title: String,
   link_text: String,
   link_path: String
+}
+```
+``` css
+.hero {
+  background-image: url('../assets/img/[filename].jpg');
 }
 ```
