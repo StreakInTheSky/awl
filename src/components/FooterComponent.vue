@@ -21,7 +21,9 @@ export default {
   @import '../assets/scss/variables';
 
   footer {
-    background-color: $brand-grey-light;
+    background: url('../assets/img/footer-brush.png') $brand-grey-light;
+    background-repeat: no-repeat;
+    background-position: right;
     height: 245px;
     box-sizing: border-box;
     padding: 60px 8%;
@@ -49,6 +51,8 @@ export default {
           font-weight: bold;
           -webkit-font-smoothing: antialiased;
           margin-right: 45px;
+          background-color: $brand-grey-light;
+          padding: 5px;
         }
       }
       &__copyright {
