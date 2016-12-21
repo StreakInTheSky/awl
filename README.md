@@ -20,6 +20,7 @@ npm run build
 
 ### Hero Component
 
+#### scripts
 ``` javascript
 options = {
   pre_title: String,
@@ -28,6 +29,7 @@ options = {
   link_path: String
 }
 ```
+#### styles
 ``` css
 .hero {
   background-image: url('../assets/img/[filename].jpg');
