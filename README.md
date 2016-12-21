@@ -1,27 +1,30 @@
-# awl
+# Art with Larisse
 
-> A Vue.js project
+> A Vue.js project using VueRouter and Firebase API
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+npm install -g yarn
+yarn
 
 # serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
 npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Component Options
+
+``` javascript
+// Hero Component options
+options = {
+  img_name: String,
+  pre_title: String,
+  title: String,
+  link_text: String,
+  link_path: String
+}
+```
