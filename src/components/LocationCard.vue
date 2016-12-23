@@ -24,5 +24,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/variables';
 
+.location {
+  &__card {
+    &:first-child {
+      margin-right: 30px;
+    }
+    &--top {
+      background-image: url('http://placekitten.com/475/250');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--overlay {
+      width: 475px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($brand-primary, .7);
+
+      h2 {
+        font-family: $font-secondary;
+        color: $brand-white;
+        font-size: 1.5em;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+}
 </style>

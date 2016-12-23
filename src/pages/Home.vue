@@ -9,13 +9,10 @@
     <section class="location">
       <span class="location__title">View Locations</span>
       <div class="location__wrapper">
-        <div class="location__row">
-          <LocationCard />
-          <LocationCard />
-        </div>
-        <div class="location__row">
-          <LocationCard />
-          <LocationCard />
+        <div v-for="location in locations" class="location__row">
+          <div v-for="card in location">
+            <LocationCard />
+          </div>
         </div>
       </div>
     </section>
@@ -37,6 +34,72 @@ export default {
         link_text: 'View upcoming art classes',
         link_path: '/art-classes',
       },
+      locations: [
+        [
+          {
+            name: 'Bonita1',
+            address: {
+              line1: '4510 Bonita Road',
+              city: 'Bonita',
+              state: 'CA',
+              postal: '91902',
+            },
+            phone: {
+              text: '(619) 508-1299',
+              link: '+1-619-508-1299',
+            },
+            email: 'bonita@artwithlarisse.com',
+            link_path: 'bonita',
+          },
+          {
+            name: 'Bonita2',
+            address: {
+              line1: '4510 Bonita Road',
+              city: 'Bonita',
+              state: 'CA',
+              postal: '91902',
+            },
+            phone: {
+              text: '(619) 508-1299',
+              link: '+1-619-508-1299',
+            },
+            email: 'bonita@artwithlarisse.com',
+            link_path: 'bonita',
+          },
+        ],
+        [
+          {
+            name: 'Bonita3',
+            address: {
+              line1: '4510 Bonita Road',
+              city: 'Bonita',
+              state: 'CA',
+              postal: '91902',
+            },
+            phone: {
+              text: '(619) 508-1299',
+              link: '+1-619-508-1299',
+            },
+            email: 'bonita@artwithlarisse.com',
+            link_path: 'bonita',
+          },
+          {
+            name: 'Bonita4',
+            address: {
+              line1: '4510 Bonita Road',
+              city: 'Bonita',
+              state: 'CA',
+              postal: '91902',
+            },
+            phone: {
+              text: '(619) 508-1299',
+              link: '+1-619-508-1299',
+            },
+            email: 'bonita@artwithlarisse.com',
+            link_path: 'bonita',
+          },
+        ],
+      ],
     };
   },
 };
@@ -104,32 +167,6 @@ export default {
     }
     &__row {
       display: flex;
-    }
-    &__card {
-      &:first-child {
-        margin-right: 30px;
-      }
-      &--top {
-        background-image: url('http://placekitten.com/475/250');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      &--overlay {
-        width: 475px;
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba($brand-primary, .7);
-
-        h2 {
-          font-family: $font-secondary;
-          color: $brand-white;
-          font-size: 1.5em;
-          -webkit-font-smoothing: antialiased;
-        }
-      }
     }
   }
 </style>
