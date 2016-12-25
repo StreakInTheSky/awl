@@ -1,4 +1,27 @@
+@import "../variables";
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  font-family: $font-default;
+}
+
+.cta {
+  font-family: $font-primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 80px 12px;
+  border-radius: 25px;
+  font-size: 0.8em;
+  line-height: 1;
+
+  &__primary {
+    @extend .cta;
+    background-color: lighten($brand-primary, 15);
+    color: white;
+  }
 }

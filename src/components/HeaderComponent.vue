@@ -1,8 +1,6 @@
 <template>
   <header>
-    <router-link to="/" class="logo">
-      <h1>Art with Larisse</h1>
-    </router-link>
+    <router-link to="/" class="logo">Art with Larisse</router-link>
     <nav>
       <ul class="nav__list">
         <li class="nav__list--item"><router-link to="/art-classes">Art Classes</router-link></li>
@@ -31,7 +29,7 @@ export default {
     align-items: center;
     flex-flow: column nowrap;
     color: $brand-grey;
-    background-color: $brand-grey-light;
+    background-color: $brand-white;
     -webkit-font-smoothing: antialiased;
     height: 250px;
 

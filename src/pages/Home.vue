@@ -18,11 +18,11 @@ export default {
   data() {
     return {
       heroOptions: {
-        pre_title: 'Art CLasses Start Now',
+        pre_title: 'Art Classes Start Now',
         title: 'What Starts Here,\nChanges the World',
         link_text: 'View upcoming art classes',
         link_path: '/art-classes',
-        img_path: 'hero-home-1',
+        img_path: 'hero-home-1.jpg',
       },
     };
   },

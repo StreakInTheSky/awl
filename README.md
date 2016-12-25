@@ -1,4 +1,5 @@
 # Art with Larisse
+[View Rendered App Here](https://art-with-larisse-151811.firebaseapp.com/)
 
 > A Vue.js project using VueRouter and Firebase API
 

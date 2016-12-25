@@ -1,8 +1,8 @@
 <template>
-  <div class="hero" :style="`background-image: url('/static/images/${options.img_path}.jpg');`">
-    <div class="hero__text-wrapper">
+  <div class="hero" :style="`background-image: url('/static/images/${options.img_path}');`">
+    <div class="hero__text-wrapper" :class="options.pre_title ? '' : 'title-only'">
       <p v-if="options.pre_title" class="hero__pre-title">{{options.pre_title}}</p>
-      <h2 v-if="options.title" class="hero__title" v-html="title"></h2>
+      <h1 v-if="options.title" class="hero__title" v-html="title"></h1>
       <router-link to="/art-classes" v-if="options.link_text" class="hero__link">{{options.link_text}} <i class="icon-gizmo">next</i></router-link>
     </div>
   </div>
@@ -39,6 +39,16 @@ export default {
       left: 10.5%;
       color: white;
       font-size: 1rem;
+
+      &.title-only {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .hero__title {
+          margin: 0;
+        }
+      }
     }
     &__pre-title {
       font-family: $font-primary;
