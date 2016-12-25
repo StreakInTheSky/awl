@@ -22,6 +22,7 @@ export default {
         title: 'What Starts Here,\nChanges the World',
         link_text: 'View upcoming art classes',
         link_path: '/art-classes',
+        img_path: 'hero-home-1',
       },
     };
   },
@@ -30,10 +31,6 @@ export default {
 
 <style lang="scss">
   @import '../assets/scss/variables';
-
-  .hero {
-    background-image: url('../assets/img/hero-home-1.jpg');
-  }
   .spacer-secondary {
     background-image: url('../assets/img/location-block-background.png');
     height: 360px;

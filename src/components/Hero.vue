@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero" :style="`background-image: url('/static/images/${options.img_path}.jpg');`">
     <div class="hero__text-wrapper">
       <p v-if="options.pre_title" class="hero__pre-title">{{options.pre_title}}</p>
       <h2 v-if="options.title" class="hero__title" v-html="title"></h2>
