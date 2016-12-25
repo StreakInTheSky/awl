@@ -11,7 +11,7 @@ $font-dir: '/static/fonts/';
 	src: url('#{$font-dir}AvantGardeMdITC-Bold.eot?#iefix') format('embedded-opentype'),
 		url('#{$font-dir}AvantGardeMdITC-Bold.woff') format('woff'),
 		url('#{$font-dir}AvantGardeMdITC-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -26,12 +26,32 @@ $font-dir: '/static/fonts/';
 }
 
 @font-face {
+	font-family: 'SS Standard';
+	src: url('#{$font-dir}SSStandard.eot');
+	src: url('#{$font-dir}SSStandard.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-dir}SSStandard.woff') format('woff'),
+		url('#{$font-dir}SSStandard.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS Social';
+  src: url('#{$font-dir}SSSocialRegular.eot');
+  src: url('#{$font-dir}SSSocialRegular.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-dir}SSSocialRegular.woff') format('woff'),
+  url('#{$font-dir}SSSocialRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
 	font-family: 'Nexa';
 	src: url('#{$font-dir}NexaLight.eot');
 	src: url('#{$font-dir}NexaLight.eot?#iefix') format('embedded-opentype'),
 		url('#{$font-dir}NexaLight.woff') format('woff'),
 		url('#{$font-dir}NexaLight.ttf') format('truetype');
-	font-weight: 300;
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -42,15 +62,5 @@ $font-dir: '/static/fonts/';
 		url('#{$font-dir}NexaBold.woff') format('woff'),
 		url('#{$font-dir}NexaBold.ttf') format('truetype');
 	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SS Social';
-	src: url('#{$font-dir}SSSocialRegular.eot');
-	src: url('#{$font-dir}SSSocialRegular.eot?#iefix') format('embedded-opentype'),
-		url('#{$font-dir}SSSocialRegular.woff') format('woff'),
-		url('#{$font-dir}SSSocialRegular.ttf') format('truetype');
-	font-weight: normal;
 	font-style: normal;
 }

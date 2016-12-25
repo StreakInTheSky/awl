@@ -21,7 +21,8 @@ export default {
       locations: [
         [
           {
-            name: 'Bonita1',
+            name: 'Bonita',
+            subtitle: '',
             address: {
               line1: '4510 Bonita Road',
               city: 'Bonita',
@@ -37,53 +38,44 @@ export default {
             color: '73,38,73',
           },
           {
-            name: 'Bonita2',
-            address: {
-              line1: '4510 Bonita Road',
-              city: 'Bonita',
-              state: 'CA',
-              postal: '91902',
-            },
-            phone: {
-              text: '(619) 508-1299',
-              link: '+1-619-508-1299',
-            },
-            email: 'bonita@artwithlarisse.com',
-            link_path: 'bonita',
+            name: 'Coming Soon',
+            subtitle: 'Scripps Ranch or Kearny Mesa',
             color: '253,163,89',
           },
         ],
         [
           {
-            name: 'Bonita3',
+            name: 'La Mesa',
+            subtitle: '',
             address: {
-              line1: '4510 Bonita Road',
-              city: 'Bonita',
+              line1: '5208 Jackson Drive, Ste 111',
+              city: 'La Mesa',
               state: 'CA',
-              postal: '91902',
+              postal: '91942',
             },
             phone: {
-              text: '(619) 508-1299',
-              link: '+1-619-508-1299',
+              text: '(619) 857-1270',
+              link: '+1-619-857-1270',
             },
-            email: 'bonita@artwithlarisse.com',
-            link_path: 'bonita',
+            email: 'lamesa@artwithlarisse.com',
+            link_path: 'lamesa',
             color: '235,101,89',
           },
           {
-            name: 'Bonita4',
+            name: 'Santee',
+            subtitle: '',
             address: {
-              line1: '4510 Bonita Road',
-              city: 'Bonita',
+              line1: '9225 Carlton Hills Blvd, Ste. 31',
+              city: 'Santee',
               state: 'CA',
-              postal: '91902',
+              postal: '92071',
             },
             phone: {
-              text: '(619) 508-1299',
-              link: '+1-619-508-1299',
+              text: '(619) 855-2787',
+              link: '+1-619-855-2787',
             },
-            email: 'bonita@artwithlarisse.com',
-            link_path: 'bonita',
+            email: 'santee@artwithlarisse.com',
+            link_path: 'santee',
             color: '238,192,44',
           },
         ],
@@ -103,6 +95,7 @@ export default {
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-bottom: 100px;
 
     &__title {
       font-family: $font-secondary;
